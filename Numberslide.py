@@ -32,7 +32,10 @@ def inp():
     return range(int(inp_tup[0]), int(inp_tup[1]))
 
 def main():
-    format_result(calc(inp()),0)
+    try:
+        format_result(calc(inp()),0)
+    except Exception as e:
+        print(e)
 
 if __name__ == '__main__':
     start = time.process_time()
